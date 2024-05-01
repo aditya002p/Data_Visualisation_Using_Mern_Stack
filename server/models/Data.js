@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const productSchema = new mongoose.Schema({
+
+const dataSchema = new mongoose.Schema({
   end_year: String,
   intensity: Number,
   sector: String,
@@ -19,4 +20,6 @@ const productSchema = new mongoose.Schema({
   likelihood: Number,
 });
 
-module.exports = mongoose.model("Product", productSchema);
+const Data = mongoose.model("Data", dataSchema);
+
+module.exports = Data;

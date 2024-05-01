@@ -1,28 +1,29 @@
-require("dotenv").config();
+// app.js
 const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const apiRoutes = require("./routes/api");
+require("dotenv").config();
+
+// Call the script to load data
+require("./loadData");
+
 const app = express();
-const connectDB = require("./database/connect");
-const PORT = process.env.PORT || 5000;
 
-const products_routes = require("./routes/product");
+app.use(cors());
+app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("hi i am live");
+// MongoDB connection (remove this from loadData.js)
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
-//middleware or to set the routes
+// Routes
+app.use("/api", apiRoutes);
 
-app.use("/api/products", products_routes);
-
-const start = async () => {
-  try {
-    await connectDB(process.env.MONGODB_URL);
-    app.listen(PORT, () => {
-      console.log(`${PORT} yes i am connected`);
-    });
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-start();
+// Start the server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
