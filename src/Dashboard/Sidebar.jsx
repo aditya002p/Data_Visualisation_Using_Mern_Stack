@@ -9,7 +9,6 @@ import {
   DrawerContent,
   IconButton,
   useDisclosure,
-  Select,
   Divider,
   Text,
   Flex,
