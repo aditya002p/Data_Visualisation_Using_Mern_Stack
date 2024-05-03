@@ -70,7 +70,13 @@ const CountryChart = ({ data }) => {
   };
 
   return (
-    <Box p={6} shadow="md" bg={useColorModeValue("white", "gray.800")} m={50}>
+    <Box
+      p={6}
+      shadow="md"
+      bg={useColorModeValue("white", "gray.800")}
+      m={50}
+      boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
+    >
       <Flex direction="column" margin={"auto"}>
         <Heading
           as={"h2"}

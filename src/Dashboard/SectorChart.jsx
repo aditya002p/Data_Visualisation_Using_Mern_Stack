@@ -51,7 +51,6 @@ const PieChart = ({ data }) => {
     <Box
       p={6}
       borderRadius={20}
-      boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
       mt={50}
       ml={50}
       shadow="md"
@@ -59,6 +58,7 @@ const PieChart = ({ data }) => {
       bg={useColorModeValue("white", "gray.800")}
       maxHeight={700}
       overflow="hidden"
+      boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
     >
       <Heading as="h2" mb={4}>
         Sector Chart

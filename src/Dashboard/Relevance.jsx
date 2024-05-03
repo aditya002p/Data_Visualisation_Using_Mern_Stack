@@ -54,7 +54,7 @@ const RelevanceBubbleChart = ({ data }) => {
       p={4}
       mt={8}
       borderRadius={18}
-      boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
+      boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
     >
       <Heading as="h2" mb={4}>
         Relevance Chart

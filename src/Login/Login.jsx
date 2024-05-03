@@ -28,11 +28,12 @@ const LoginPage = () => {
 
   return (
     <Box
-      bg="linear-gradient(to bottom right, #4F3BA9, #9068BE)"
+      bg="linear-gradient(to bottom, #cccccc, #e0e0e0, #ffffff)"
       minH="100vh"
       display="flex"
       justifyContent="center"
       alignItems="center"
+      boxShadow="10px 20px 30px rgba(0, 0, 0, 10)"
     >
       <Container
         p={8}
@@ -42,29 +43,36 @@ const LoginPage = () => {
         borderColor="white"
         textAlign="center"
       >
-        <h1 style={{ color: "white" }}>Welcome Admin !!!</h1>
+        <h1
+          style={{
+            color: "black",
+            fontWeight: "bold",
+            fontSize: "1.4rem",
+            paddingBottom: "2rem",
+          }}
+        >
+          Welcome Admin !!!
+        </h1>
         <form>
           <FormControl>
-            <FormLabel style={{ color: "white" }}>Admin Email</FormLabel>
+            <FormLabel style={{ color: "black" }}>Admin Email</FormLabel>
             <Input
               type="text"
               placeholder="Enter your username"
               value="admin@gmail.com"
               borderColor="white"
-              disabled
             />
           </FormControl>
           <FormControl mt={4}>
-            <FormLabel style={{ color: "white" }}>Password</FormLabel>
+            <FormLabel style={{ color: "black" }}>Password</FormLabel>
             <Input
               type="password"
               placeholder="Enter your password"
               value="admin"
               borderColor="white"
-              disabled
             />
           </FormControl>
-          <Button colorScheme="green" mt={6} w="100%" onClick={handleLogin}>
+          <Button colorScheme="red" mt={6} w="100%" onClick={handleLogin}>
             Login
           </Button>
           {/* AlertDialog */}

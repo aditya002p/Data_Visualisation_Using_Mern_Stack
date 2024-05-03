@@ -44,13 +44,13 @@ const LikelihoodRadarChart = ({ data }) => {
     <Box
       borderRadius={20}
       pt={6}
-      boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
       mt={50}
       shadow="md"
       pb={100}
       bg={useColorModeValue("white", "gray.800")}
       maxHeight={700}
       overflow="hidden"
+      boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
     >
       <Heading as="h2" mb={4} ml={6}>
         Likelihood Chart

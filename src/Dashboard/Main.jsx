@@ -44,7 +44,7 @@ const Main = () => {
           maxW="50%"
           p={5}
           m={2}
-          boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
+          boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
           borderRadius={20}
         >
           <RegionChart data={data} />
@@ -54,7 +54,7 @@ const Main = () => {
           maxW="50%"
           p={5}
           m={2}
-          boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
+          boxShadow="0px 0px 20px rgba(0, 0, 0, 0.5)"
           borderRadius={20}
         >
           <TopicsRadarChart data={data} />

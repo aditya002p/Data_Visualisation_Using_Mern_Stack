@@ -117,7 +117,7 @@ const AdminDashboard = () => {
             <Flex alignItems="center" mt="140%">
               <Avatar
                 size="lg"
-                src="https://drive.google.com/file/d/1L6Nl0RvH4R9dkGGL-oJne4_Z57NB6XlU/view?usp=sharing"
+                src="https://avatars.githubusercontent.com/u/116887286?v=4"
                 mr={4}
               />
               <Box>
